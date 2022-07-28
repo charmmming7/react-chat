@@ -1,0 +1,19 @@
+@use "../../assets/scss/helper/variables" as *;
+@use "../../assets/scss/helper/mixins" as *;
+
+.chat {
+  &_template {
+    height: 100%;
+    background-color: $white;
+  }
+
+  &_content {
+    height: 100%;
+    padding-top: 44px;
+    box-sizing: border-box;
+
+    &.room {
+      background-color: $paleGrey;
+    }
+  }
+}

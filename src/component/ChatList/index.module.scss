@@ -1,0 +1,8 @@
+@use "../../assets/scss/helper/variables" as *;
+@use "../../assets/scss/helper/mixins" as *;
+
+.chat_list {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: .625rem 0 0;
+}

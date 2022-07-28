@@ -1,0 +1,32 @@
+@use "../../assets/scss/helper/variables" as *;
+@use "../../assets/scss/helper/mixins" as *;
+
+.message_input_area {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: #{$header-menu-z-index};
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem 1.125rem;
+}
+
+.message_input {
+  flex-grow: 1;
+  margin-right: .75rem;
+  padding: 1.063rem 1rem 1rem;
+  background-color: $white;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px 0 rgba($black, .1);
+}
+
+.btn_submit {
+  display: block;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: $purple;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}

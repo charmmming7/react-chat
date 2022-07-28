@@ -1,0 +1,40 @@
+@use "../../assets/scss/helper/variables" as *;
+@use "../../assets/scss/helper/mixins" as *;
+
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.75rem;
+  padding: 0 .625rem;
+  background-color: $purple;
+
+  .title {
+    position: absolute;
+    left: 50%;
+    font-size: 1.063rem;
+    letter-spacing: -.12px;
+    color: $white;
+    transform: translateX(-50%);
+  }
+
+  .btn_menu,
+  .btn_back,
+  .btn_my,
+  .btn_upload,
+  .btn_search {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .btn_group_right {
+    display: inline-flex;
+    gap: 1.063rem;
+  }
+}
