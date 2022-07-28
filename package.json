@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "lib/functions/src/index.js",
+  "homepage": "http://charmmming7.github.io/react-chat",
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",

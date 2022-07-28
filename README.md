@@ -26,4 +26,4 @@ npm run deploy : build + ghpages 업로드
 ## 참고 사항
 
 ### 작업 페이지 확인 URL
-- 산출물: https://giftshop-preview.website.line-apps-dev.com
+- 산출물: http://charmmming7.github.io/react-chat
