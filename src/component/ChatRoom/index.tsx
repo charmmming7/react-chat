@@ -3,14 +3,14 @@ import style from './index.module.scss';
 import ChatHeader from 'component/ChatHeader';
 import classNames from "classnames";
 
-const ChatTemplate = ({
+const ChatRoom = ({
   type,
   title,
   isExpanded,
   children
-}: ChatTemplateProps) => {
+}: ChatRoomProps) => {
   return (
-    <div className={style.chat_template}>
+    <div className={style.chat_room}>
       <ChatHeader type={type} title={title} isExpanded={isExpanded}/>
       <div className={classNames(
         style.chat_content,
@@ -22,4 +22,4 @@ const ChatTemplate = ({
   );
 };
 
-export default ChatTemplate;
+export default ChatRoom;

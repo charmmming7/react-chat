@@ -13,9 +13,16 @@ const MessageItem = ({
   const year = fulldate.getFullYear();
   const month = fulldate.getMonth()+1;
   const date = fulldate.getDate();
-  const hour = fulldate.getHours();
-  const minutes = fulldate.getMinutes();
+  let hour = fulldate.getHours();
+  let minutes = fulldate.getMinutes();
+  let newMinutes = minutes > 9 ? minutes : '0' + minutes;
   const fullDateStr = year + '년 ' + month + '월 ' + date + '일';
+  let ampm = '오전';
+
+  if(hour > 12) {
+    hour = hour - 12;
+    ampm = '오후';
+  }
 
   return (
     <>
@@ -31,7 +38,7 @@ const MessageItem = ({
       <div className={style.message_item_inner}>
         <div className={style.msg}>{msg}</div>
       </div>
-      <span className={style.timestamp}>{hour}:{minutes}</span>
+      <span className={style.timestamp}>{ampm} {hour}:{newMinutes}</span>
     </div>
     </>
   );

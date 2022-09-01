@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import ChatTemplate from 'component/ChatTemplate';
+import ChatRoom from 'component/ChatRoom';
 import ChatList from 'component/ChatList';
 
 const List = () => {
@@ -74,9 +74,9 @@ const List = () => {
   }, []);
 
 return (
-    <ChatTemplate type="default" title="채팅" isExpanded={false}>
+    <ChatRoom type="default" title="채팅" isExpanded={false}>
       <ChatList messageList={messageList}/>
-    </ChatTemplate>
+    </ChatRoom>
   );
 };
 

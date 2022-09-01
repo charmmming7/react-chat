@@ -2,8 +2,8 @@
 @use "../../assets/scss/helper/mixins" as *;
 
 .chat {
-  &_template {
-    height: 100%;
+  &_room {
+    height: calc(100% - 3.125rem);
     background-color: $white;
   }
 
