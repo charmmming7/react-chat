@@ -1,5 +1,8 @@
 # React 채팅 앱 구현
 
+## 작업 페이지 확인 URL
+- 산출물: http://charmmming7.github.io/react-chat
+
 ## version
 
 ```
@@ -22,8 +25,3 @@ npm run build : dist 폴더 생성
 
 npm run deploy : build + ghpages 업로드
 ```
-
-## 참고 사항
-
-### 작업 페이지 확인 URL
-- 산출물: http://charmmming7.github.io/react-chat
